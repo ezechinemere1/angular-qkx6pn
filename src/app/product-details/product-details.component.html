@@ -1,0 +1,11 @@
+<p>we are selling standard high value phone product. buy what you need</p>
+<h2>Product Details</h2>
+
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price | currency }}</h4>
+  <p>{{ product.description }}</p>
+  <button type="button" (click)="addToCart(product)">Buy</button>
+</div>
